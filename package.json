@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src --dest dist"
+    "build": "vuepress build src --dest docs"
   },
   "dependencies": {
     "vuepress-theme-meteorlxy": "^1.2.0"
