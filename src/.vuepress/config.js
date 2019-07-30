@@ -1,6 +1,8 @@
 module.exports = {
   title: 'mat2 vuepress blog',
   description: 'this is vuepress blog',
+  dest: 'docs/',
+  base: '/Vuepress-blog/',
   locales: {
     '/': {
       lang: 'ja-JP',
