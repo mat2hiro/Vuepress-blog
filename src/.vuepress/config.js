@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'mat2 vuepress blog',
+  title: 'mat2\'s tech blog',
   description: 'this is vuepress blog',
   dest: 'docs/',
   base: '/Vuepress-blog/',
@@ -10,14 +10,17 @@ module.exports = {
   },
   // theme: 'meteorlxy',
   themeConfig: {
-    lang: require('vuepress-theme-meteorlxy/lib/langs/ja-JP'),
+    lang: Object.assign(require('vuepress-theme-meteorlxy/lib/langs/ja-JP'), {
+      posts: '投稿',
+    }),
     personalInfo: {
-      nickname: 'お腹',
+      nickname: 'mat2',
       description: 'エンジニアをしたい',
       email: 'ondriver246.1u@gmail.com',
+      link: '/profile/',
       // location: '',
-      // organization: '',
-      // avatar: '',
+      organization: 'Tokyo Institute of Technology/Techflyer,inc.',
+      avatar: 'https://pbs.twimg.com/profile_images/1092782177471741952/OnHQf9H2_400x400.jpg',
       sns: {
         github: {
           account: 'mat2hiro',
@@ -48,7 +51,27 @@ module.exports = {
         link: '/posts/',
         exact: false,
       },
+      {
+        text: 'Profile',
+        link: '/profile/',
+        exact: true,
+      },
+      {
+        text: 'Links',
+        link: '/links/',
+        exact: true,
+      },
     ],
     comments: false,
+    links: [
+      {
+        name: 'リンク1',
+        link: 'https://twitter.com',
+      },
+      {
+        name: 'リンク2',
+        link: 'https://github.com',
+      },
+    ],
   },
 }

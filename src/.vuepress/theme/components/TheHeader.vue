@@ -5,7 +5,7 @@
   >
     <TheHeaderNavbar />
 
-    <TransitionFadeSlide>
+    <TransitionFadeSlide v-if="$page.type!=='post'">
       <TheHeaderBanner :key="$route.path">
         <slot>
           <h1 v-if="showTitle">

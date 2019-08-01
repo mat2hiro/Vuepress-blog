@@ -12,9 +12,13 @@
     </div>
 
     <div class="info-card-body">
-      <section class="info-nickname">
-        {{ nickname }}
-      </section>
+      <RouterLink
+        :to="profileLink"
+      >
+        <section class="info-nickname">
+          {{ nickname }}
+        </section>
+      </RouterLink>
 
       <!-- eslint-disable vue/no-v-html -->
       <section
@@ -125,6 +129,10 @@ export default {
 
     sns () {
       return this.info.sns || null
+    },
+
+    profileLink () {
+      return this.info.link || null
     },
 
     headerStyle () {

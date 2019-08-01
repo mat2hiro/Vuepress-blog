@@ -17,6 +17,11 @@
       <aside class="aside">
         <InfoCard class="main-div" />
 
+        <LinksCard
+          v-if="$route.path === '/'"
+          class="main-div"
+        />
+
         <PostNavCard
           v-if="$page.type === 'post'"
           class="main-div"
@@ -30,6 +35,7 @@
 import TransitionFadeSlide from './TransitionFadeSlide.vue'
 import PostNavCard from './PostNavCard.vue'
 import InfoCard from './InfoCard.vue'
+import LinksCard from './LinksCard'
 
 export default {
   name: 'TheMain',
@@ -38,6 +44,7 @@ export default {
     TransitionFadeSlide,
     InfoCard,
     PostNavCard,
+    LinksCard,
   },
 
   computed: {

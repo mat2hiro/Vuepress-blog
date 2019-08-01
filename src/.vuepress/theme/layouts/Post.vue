@@ -1,6 +1,9 @@
 <template>
   <div class="post">
-    <PostMeta v-if="meta" />
+    <h1>
+      {{ $page.frontmatter.title || $page.title || $site.title || '' }}
+    </h1>
+    <PostMetaTop v-if="meta" />
 
     <article class="main-div">
       <Content
@@ -9,21 +12,23 @@
       />
     </article>
 
-    <PostDisqus />
+    <PostMetaBottom v-if="meta" />
 
-    <PostMeta v-if="meta" />
+    <PostDisqus />
   </div>
 </template>
 
 <script>
-import PostMeta from '../components/PostMeta.vue';
+import PostMetaTop from '../components/PostMetaTop.vue';
+import PostMetaBottom from '../components/PostMetaBottom.vue';
 import PostDisqus from '../components/PostDisqus';
 
 export default {
   name: 'Post',
 
   components: {
-    PostMeta,
+    PostMetaTop,
+    PostMetaBottom,
     PostDisqus,
   },
 
@@ -46,3 +51,8 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus">
+h1
+  text-align center
+</style>

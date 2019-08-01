@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.0.3"
+    "vuepress": "^1.0.3",
+    "vuepress-plugin-feed": "^0.1.6",
+    "vuepress-plugin-seo": "^0.1.2",
+    "vuepress-plugin-sitemap": "^2.1.2"
   },
   "scripts": {
     "dev": "vuepress dev src",
