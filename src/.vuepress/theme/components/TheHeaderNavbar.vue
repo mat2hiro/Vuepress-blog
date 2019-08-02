@@ -3,6 +3,7 @@
     <nav
       class="navbar"
       :class="navbarClass"
+      :style="style"
     >
       <div class="container">
         <RouterLink :to="$localePath">
@@ -88,6 +89,22 @@ export default {
         fixed: this.fixed,
       }
     },
+
+    style () {
+      if (this.fixed && this.$frontmatter['header-image']) {
+        let url = this.$frontmatter['header-image']
+
+        return {
+          'background-size': 'cover',
+          'background-repeat': 'no-repeat',
+          'background-position': 'center',
+          'background-attachment': 'scroll',
+          'background-image': `linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,.75),rgba(255,255,255,1)),
+          url(${url})`,
+        }
+      }
+      return {}
+    }
   },
 
   mounted () {

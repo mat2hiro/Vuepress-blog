@@ -66,6 +66,12 @@ export default {
     },
 
     style () {
+
+      if (this.$page.type === 'post') {
+        return {
+          'background-image': this.gpImg(),
+        }
+      }
       // use image
       if (this.backgroundImg) {
         let url = this.backgroundImg

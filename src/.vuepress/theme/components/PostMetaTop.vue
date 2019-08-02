@@ -1,5 +1,5 @@
 <template>
-  <section class="post-meta main-div">
+  <section class="post-meta main-div" :style="style">
     <section class="post-breadcrumbs">
       <span
         v-if="$page.category"
@@ -62,6 +62,24 @@ export default {
     IconInfo,
     PageShareButtons,
   },
+
+  computed: {
+    style () {
+      if (this.$frontmatter['header-image']) {
+        let url = this.$frontmatter['header-image']
+
+        return {
+          'background-size': 'cover',
+          'background-repeat': 'no-repeat',
+          'background-position': 'center',
+          'background-attachment': 'scroll',
+          'background-image': `linear-gradient(0,rgba(255,255,255,.5),rgba(255,255,255,.8)),
+          url(${url})`,
+        }
+      }
+      return {}
+    },
+  },
 }
 </script>
 
@@ -76,12 +94,12 @@ export default {
       &:not(:first-child)
         margin-left 0.5em
       a
-        color $lightTextColor
+        color $textColor
         font-weight normal
       .icon
-        fill $lightTextColor
+        //fill $lightTextColor
   .post-date
-    color lighten($grayTextColor, 50%)
+    //color lighten($grayTextColor, 50%)
     margin-bottom 1rem
     .create-date
       float left

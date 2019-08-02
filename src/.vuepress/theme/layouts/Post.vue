@@ -1,8 +1,12 @@
 <template>
   <div class="post">
-    <h1>
-      {{ $page.frontmatter.title || $page.title || $site.title || '' }}
-    </h1>
+    <div
+      class="post-header-banner"
+    >
+      <h1>
+        {{ $page.frontmatter.title || $page.title || $site.title || '' }}
+      </h1>
+    </div>
     <PostMetaTop v-if="meta" />
 
     <article class="main-div">
