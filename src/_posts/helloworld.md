@@ -38,7 +38,7 @@ vuepress + github pages による個人ブログ作成
 *italic*
 
 > quote
->> nets
+>> nest
 
 `print(str(2))`
 

@@ -74,4 +74,19 @@ module.exports = {
       },
     ],
   },
+  // plugins
+  plugins: {
+    'sitemap': {
+      hostname: 'https://mat2hiro.github.io/Vuepress-blog'
+    },
+    'seo': {
+      twitterCard: ($page, $site) => {
+        const ret = $page.frontmatter['header-image'] || $site.themeConfig.header.background || null;
+        return ret ? $site.base.slice(0,-1) + ret : null;
+      },
+    },
+    'feed': {
+      canonical_base: 'https://mat2hiro.github.io/Vuepress-blog'
+    },
+  }
 }

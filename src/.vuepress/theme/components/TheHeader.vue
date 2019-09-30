@@ -74,7 +74,7 @@ export default {
       }
       // use image
       if (this.backgroundImg) {
-        let url = this.backgroundImg
+        let url = this.$site.base.slice(0,-1) + this.backgroundImg
 
         // randomly select an image if an array is provided
         if (Array.isArray(url)) {
