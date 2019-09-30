@@ -1,8 +1,8 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "mat2's tech blog",
-    "home_page_url": "https://mat2hiro.github.io/Vuepress-blog",
-    "feed_url": "https://mat2hiro.github.io/feed.json",
+    "home_page_url": "https://mat2hiro.github.io/Vuepress-blog/",
+    "feed_url": "https://mat2hiro.github.io/Vuepress-blog/feed.json",
     "description": "this is vuepress blog",
     "items": [
         {

@@ -2,7 +2,7 @@ module.exports = {
   title: 'mat2\'s tech blog',
   description: 'this is vuepress blog',
   dest: 'docs/',
-  base: '/',
+  base: '/Vuepress-blog/',
   locales: {
     '/': {
       lang: 'ja-JP',
@@ -77,7 +77,7 @@ module.exports = {
   // plugins
   plugins: {
     'sitemap': {
-      hostname: 'https://mat2hiro.github.io/Vuepress-blog'
+      hostname: 'https://mat2hiro.github.io/Vuepress-blog/'
     },
     'seo': {
       twitterCard: ($page, $site) => {
@@ -86,7 +86,7 @@ module.exports = {
       },
     },
     'feed': {
-      canonical_base: 'https://mat2hiro.github.io/Vuepress-blog'
+      canonical_base: 'https://mat2hiro.github.io/Vuepress-blog/'
     },
   }
 }
