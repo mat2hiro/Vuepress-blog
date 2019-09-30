@@ -86,7 +86,14 @@ module.exports = {
       },
     },
     'feed': {
-      canonical_base: 'https://mat2hiro.github.io/Vuepress-blog/'
+      canonical_base: 'https://mat2hiro.github.io/Vuepress-blog/',
+      feed_options: {
+        author: {
+          name: "mat2",
+          email: "ondriver246.1u@gmail.com",
+          link: "https://mat2hiro.github.io/Vuepress-blog/profile/"
+        },
+      },
     },
   }
 }

@@ -4,6 +4,10 @@
     "home_page_url": "https://mat2hiro.github.io/Vuepress-blog/",
     "feed_url": "https://mat2hiro.github.io/Vuepress-blog/feed.json",
     "description": "this is vuepress blog",
+    "author": {
+        "name": "mat2",
+        "url": "https://mat2hiro.github.io/Vuepress-blog/profile/"
+    },
     "items": [
         {
             "id": "https://mat2hiro.github.io/posts/2019/07/30/helloworld.html",
@@ -11,7 +15,11 @@
             "title": "Hello, VuePress!!",
             "summary": "vuepress + github pages による個人ブログ作成",
             "image": "https://pbs.twimg.com/profile_images/1092782177471741952/OnHQf9H2_400x400.jpg",
-            "date_modified": "2019-07-30T00:00:00.000Z"
+            "date_modified": "2019-07-30T00:00:00.000Z",
+            "author": {
+                "name": "mat2",
+                "url": "https://mat2hiro.github.io/Vuepress-blog/profile/"
+            }
         }
     ]
 }
