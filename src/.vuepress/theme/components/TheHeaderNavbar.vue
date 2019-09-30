@@ -92,7 +92,7 @@ export default {
 
     style () {
       if (this.fixed && this.$frontmatter['header-image']) {
-        let url = this.$frontmatter['header-image']
+        let url = this.$site.base.slice(0,-1) + this.$frontmatter['header-image']
 
         return {
           'background-size': 'cover',
