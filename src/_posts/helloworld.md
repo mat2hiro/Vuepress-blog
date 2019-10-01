@@ -6,6 +6,7 @@ date: 2019-07-30
 title: Hello, VuePress!!
 vssue-title: Hello, VuePress!!
 header-image: /img/posts/theheader.jpeg
+description: vuepress + github pages による個人ブログ作成
 ---
 
 vuepress + github pages による個人ブログ作成
