@@ -131,4 +131,6 @@ export default {
 .header
   background-color $headerColor
   transition all 0.5s ease-in-out
+.banner h1
+  text-shadow 1px 0 10px black
 </style>

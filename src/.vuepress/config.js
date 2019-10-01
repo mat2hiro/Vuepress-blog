@@ -2,16 +2,20 @@ module.exports = {
   title: 'mat2\'s tech blog',
   description: 'this is vuepress blog',
   dest: 'docs/',
-  base: '/',
   locales: {
     '/': {
       lang: 'ja-JP',
     },
   },
+  head: [
+    ['script', { src: 'https://kit.fontawesome.com/4303b21f4b.js', crossorigin: 'anonymous' }],
+  ],
   // theme: 'meteorlxy',
   themeConfig: {
+    domain: 'https://mat2.net',
     lang: Object.assign(require('vuepress-theme-meteorlxy/lib/langs/ja-JP'), {
       posts: '投稿',
+      searchHint: 'タイトルと見出しから検索'
     }),
     personalInfo: {
       nickname: 'mat2',
@@ -34,8 +38,8 @@ module.exports = {
     },
     header: {
       background: {
-        // url: '/assets/img/header_bg.jpg',
-        // useGeo: 'true',
+        url: '/img/public/header_bg.jpeg',
+        useGeo: false,
       },
       showTitle: true,
     },
@@ -77,21 +81,25 @@ module.exports = {
   // plugins
   plugins: {
     'sitemap': {
-      hostname: 'https://mat2hiro.github.io/Vuepress-blog/'
+      hostname: 'https://mat2.net/'
     },
     'seo': {
       twitterCard: ($page, $site) => {
-        const ret = $page.frontmatter['header-image'] || $site.themeConfig.header.background || null;
-        return ret ? $site.base.slice(0,-1) + ret : null;
+        const ret = $page.frontmatter['header-image'] || $site.themeConfig.header.background.url || null;
+        if (ret) {
+          return (ret.startsWith('http') ? '' : $site.themeConfig.domain) + ret
+        } else {
+          return null
+        }
       },
     },
     'feed': {
-      canonical_base: 'https://mat2hiro.github.io/Vuepress-blog/',
+      canonical_base: 'https://mat2.net/',
       feed_options: {
         author: {
           name: "mat2",
           email: "ondriver246.1u@gmail.com",
-          link: "https://mat2hiro.github.io/Vuepress-blog/profile/"
+          link: "https://mat2.net/profile/"
         },
       },
     },

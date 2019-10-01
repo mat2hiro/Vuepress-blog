@@ -26,11 +26,28 @@
         </div>
 
         <div
+          class ="navbar-closer-bg"
+          @click="showNavLinks = !showNavLinks"
+          :class="{
+            'show': showNavLinks,
+          }"
+        ></div>
+
+        <div
           class="navbar-links"
           :class="{
             'show': showNavLinks,
           }"
         >
+          <div
+            class="navbar-closer"
+            @click="showNavLinks = !showNavLinks"
+          >
+            <Icon
+              name="menu"
+              size="1.2em"
+            />
+          </div>
           <template v-for="nav of $themeConfig.nav">
             <RouterLink
               v-if="!isExternal(nav.link)"
@@ -155,7 +172,7 @@ $lineHeight = $navbarHeight - ($gutter * 2)
     position relative
     font-size 1.2rem
     font-weight 600
-    color $accentColor
+    color $titleColor
     max-width 'calc(100% - %s)' % $lineHeight
     max-height $lineHeight
     overflow hidden
@@ -169,26 +186,58 @@ $lineHeight = $navbarHeight - ($gutter * 2)
     text-align center
     z-index 100
     .icon
-      fill $accentColor
+      fill $titleColor
     @media (max-width $MQMobile - 1px)
       display inline
     @media (min-width $MQMobile)
       display none
-  .navbar-links
+  .navbar-closer
+    cursor pointer
+    box-sizing border-box
+    width $lineHeight
+    border-radius 50%
+    border solid 2px transparent
+    text-align center
+    z-index 100
+    margin-right -2.5px
+    margin-left auto
+    .icon
+      fill $accentColor
+    @media (max-width $MQMobile - 1px)
+      display block
+    @media (min-width $MQMobile)
+      display none
+  .navbar-closer-bg
+    display none
+    z-index 99
+    position fixed
+    top 0
+    bottom 0
+    right 0
+    left 0
+    background rgba(0,0,0,.5)
     @media (max-width $MQMobile - 1px)
       &.show
         display block
-      display none
+  .navbar-links
+    @media (max-width $MQMobile - 1px)
+      right -100%
+      visibility none
+      &.show
+        visibility inherit
+        right 0
       position fixed
       top $navbarHeight
-      right 0
       text-align center
       padding $gutter 2rem
       border 1px solid $borderColor
       border-top none
       background-color alpha($navbarColor, 0.8)
+      transition all 0.25s ease-out
       z-index 100
-      transition all 0.5s ease-out
+      width 60vw
+      height 100vh
+      top 0
     @media (min-width $MQMobile)
       float right
       margin 0

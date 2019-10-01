@@ -2,4 +2,4 @@
 title: プロフィール
 ---
 
-# this is a profile page.
+# Here is under construction. :P

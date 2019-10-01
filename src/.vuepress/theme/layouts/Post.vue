@@ -59,4 +59,6 @@ export default {
 <style lang="stylus">
 h1
   text-align center
+.banner h1
+  text-shadow 1px 0 10px black
 </style>

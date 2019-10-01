@@ -1,5 +1,6 @@
 <template>
   <section class="post-meta main-div">
+    <PageFollowButtons />
     <section class="post-links">
       <RouterLink
         v-if="prevPost"
@@ -21,8 +22,14 @@
 </template>
 
 <script>
+import PageFollowButtons from './PageFollowButtons'
+
 export default {
   name: 'PostMetaBottom',
+
+  components: {
+    PageFollowButtons,
+  },
 
   computed: {
     thisIndex () {

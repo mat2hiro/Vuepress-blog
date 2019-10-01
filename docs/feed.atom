@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mat2hiro.github.io/Vuepress-blog/</id>
+    <id>https://mat2.net/</id>
     <title>mat2&apos;s tech blog</title>
-    <updated>2019-09-30T10:14:35.359Z</updated>
+    <updated>2019-10-01T05:31:49.251Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <author>
         <name>mat2</name>
         <email>ondriver246.1u@gmail.com</email>
-        <uri>https://mat2hiro.github.io/Vuepress-blog/profile/</uri>
+        <uri>https://mat2.net/profile/</uri>
     </author>
-    <link rel="alternate" href="https://mat2hiro.github.io/Vuepress-blog/"/>
-    <link rel="self" href="https://mat2hiro.github.io/Vuepress-blog/feed.atom"/>
+    <link rel="alternate" href="https://mat2.net/"/>
+    <link rel="self" href="https://mat2.net/feed.atom"/>
     <subtitle>this is vuepress blog</subtitle>
     <entry>
         <title type="html"><![CDATA[Hello, VuePress!!]]></title>
-        <id>https://mat2hiro.github.io/posts/2019/07/30/helloworld.html</id>
-        <link href="https://mat2hiro.github.io/posts/2019/07/30/helloworld.html">
+        <id>https://mat2.net/posts/2019/07/30/helloworld.html</id>
+        <link href="https://mat2.net/posts/2019/07/30/helloworld.html">
         </link>
         <updated>2019-07-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[vuepress + github pages による個人ブログ作成]]></summary>
         <author>
             <name>mat2</name>
             <email>ondriver246.1u@gmail.com</email>
-            <uri>https://mat2hiro.github.io/Vuepress-blog/profile/</uri>
+            <uri>https://mat2.net/profile/</uri>
         </author>
     </entry>
 </feed>

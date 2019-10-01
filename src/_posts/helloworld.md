@@ -25,13 +25,15 @@ vuepress + github pages による個人ブログ作成
   - 登録した
 3. テーマをカスタマイズ
   - 投稿ページをちょっと変えた
-  - rss feed対応（？）
+  - rss feed対応
+    - 少なくともatomには対応した
   - sns share button作った
-    - ogpは未対応
+    - ogpはプラグインで対応
   - 固定ページ的なものも用意した
 4. ドメインとってSSL化
+  - mat2.netで取った
 
-### いろいろ
+## いろいろ
 
 **bold**
 

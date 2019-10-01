@@ -2,4 +2,4 @@
 title: リンク
 ---
 
-# this is links page.
+# Here is under construction. :P
