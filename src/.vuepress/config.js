@@ -84,7 +84,8 @@ module.exports = {
       hostname: 'https://mat2.net/'
     },
     'seo': {
-      twitterCard: ($page, $site) => {
+      twitterCard: _ => 'summary',
+      image: ($page, $site) => {
         const ret = $page.frontmatter['header-image'] || $site.themeConfig.header.background.url || null;
         if (ret) {
           return (ret.startsWith('http') ? '' : $site.themeConfig.domain) + ret
