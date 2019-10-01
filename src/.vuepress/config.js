@@ -9,6 +9,7 @@ module.exports = {
   },
   head: [
     ['script', { src: 'https://kit.fontawesome.com/4303b21f4b.js', crossorigin: 'anonymous' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/img/common/favicon.png' }]
   ],
   // theme: 'meteorlxy',
   themeConfig: {
@@ -38,7 +39,7 @@ module.exports = {
     },
     header: {
       background: {
-        url: '/img/public/header_bg.jpeg',
+        url: '/img/common/header_bg.jpeg',
         useGeo: false,
       },
       showTitle: true,
