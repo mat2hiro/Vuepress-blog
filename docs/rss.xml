@@ -4,7 +4,7 @@
         <title>mat2&apos;s tech blog</title>
         <link>https://mat2.net/</link>
         <description>this is vuepress blog</description>
-        <lastBuildDate>Sat, 12 Oct 2019 05:37:46 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Oct 2019 05:51:25 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://mat2.net/feed.atom" rel="self" type="application/rss+xml"/>
@@ -14,7 +14,6 @@
             <guid>https://mat2.net/posts/2019/07/30/helloworld.html</guid>
             <pubDate>Tue, 30 Jul 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[vuepress + github pages による個人ブログ作成]]></description>
-            <author>ondriver246.1u@gmail.com (mat2)</author>
             <enclosure url="https://pbs.twimg.com/profile_images/1092782177471741952/OnHQf9H2_400x400.jpg">
             </enclosure>
         </item>

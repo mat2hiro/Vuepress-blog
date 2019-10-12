@@ -21,7 +21,7 @@ module.exports = {
     personalInfo: {
       nickname: 'mat2',
       description: 'エンジニアをしたい',
-      email: 'ondriver246.1u@gmail.com',
+      email: 'ondriver246.1u[at]gmail.com',
       link: '/profile/',
       // location: '',
       organization: 'Tokyo Institute of Technology/Techflyer,inc.',
@@ -100,7 +100,7 @@ module.exports = {
       feed_options: {
         author: {
           name: "mat2",
-          email: "ondriver246.1u@gmail.com",
+          //email: "ondriver246.1u[at]gmail.com",
           link: "https://mat2.net/profile/"
         },
       },

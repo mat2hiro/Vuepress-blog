@@ -53,7 +53,6 @@
           <IconInfo
             class="info-email"
             type="email"
-            :href="`mailto:${email}`"
             :title="email"
           >
             {{ email }}
