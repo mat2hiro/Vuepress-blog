@@ -5,6 +5,10 @@
     <TheMain />
 
     <TheFooter />
+    <!--
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
+    -->
   </div>
 </template>
 

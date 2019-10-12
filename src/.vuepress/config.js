@@ -9,7 +9,7 @@ module.exports = {
   },
   head: [
     ['script', { src: 'https://kit.fontawesome.com/4303b21f4b.js', crossorigin: 'anonymous' }],
-    ['link', { rel: 'icon', type: 'image/png', href: '/img/common/favicon.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/icon/favicon.png' }]
   ],
   // theme: 'meteorlxy',
   themeConfig: {

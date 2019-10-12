@@ -47,7 +47,7 @@
         {{ `${$themeConfig.lang.updatedAt} : ${$page.updatedAt}` }}
       </span>
     </section>
-    <PageShareButtons />
+    <PageShareButtons v-bind:options="options" />
   </section>
 </template>
 
@@ -61,6 +61,15 @@ export default {
   components: {
     IconInfo,
     PageShareButtons,
+  },
+
+  data () {
+    return {
+      options: {
+        twitter: true,
+        hateb: true,
+      }
+    }
   },
 
   computed: {
