@@ -4,7 +4,7 @@
         <title>mat2&apos;s tech blog</title>
         <link>https://mat2.net/</link>
         <description>this is vuepress blog</description>
-        <lastBuildDate>Tue, 15 Oct 2019 07:47:16 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Oct 2019 13:46:06 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://mat2.net/feed.atom" rel="self" type="application/rss+xml"/>
