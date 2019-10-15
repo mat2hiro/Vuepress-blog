@@ -9,7 +9,8 @@ module.exports = {
   },
   head: [
     ['script', { src: 'https://kit.fontawesome.com/4303b21f4b.js', crossorigin: 'anonymous' }],
-    ['link', { rel: 'icon', type: 'image/png', href: '/icon/favicon.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/icon/favicon.png' }],
+    ['meta', { name: 'google-site-verification', content: 'IlPoCiloaoSPffpYU1OaEpLY1YEnCgkjdM6KfuNCN6g' }],
   ],
   // theme: 'meteorlxy',
   themeConfig: {
