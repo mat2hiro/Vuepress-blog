@@ -52,6 +52,8 @@ export default {
   >div
     margin-left 1em
     padding-bottom .5rem
+    min-height 33px
+    min-width 66px
   .rss-follow-button
     display flex
     color $grayTextColor
