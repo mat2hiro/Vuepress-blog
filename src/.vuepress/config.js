@@ -105,5 +105,8 @@ module.exports = {
         },
       },
     },
+    '@vuepress/google-analytics': {
+      ga: 'UA-150079399-1',
+    }
   }
 }
