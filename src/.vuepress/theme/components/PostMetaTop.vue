@@ -66,8 +66,11 @@ export default {
   data () {
     return {
       options: {
+        fb: true,
         twitter: true,
         hateb: true,
+        pocket: true,
+        line: true,
       }
     }
   },
