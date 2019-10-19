@@ -5,6 +5,8 @@ import { faEnvelope, faThumbsUp, faHeart, faRss, faRssSquare } from '@fortawesom
 import { faTwitter, faPinterestP, faLinkedinIn, faRedditAlien, faFacebook, faFacebookMessenger, faGetPocket, faLine } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
+import '@fortawesome/fontawesome-free/css/all.css'
+
 export default ({ Vue }) => {
   Vue.component('Iconfont', {
     functional: true,

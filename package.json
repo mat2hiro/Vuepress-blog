@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "@vuepress/plugin-google-analytics": "^1.2.0",
+    "markdown-it-fontawesome": "^0.3.0",
     "vuepress": "^1.0.3",
     "vuepress-plugin-feed": "^0.1.7",
     "vuepress-plugin-seo": "^0.1.2",

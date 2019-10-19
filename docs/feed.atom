@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mat2.net/</id>
     <title>mat2&apos;s tech blog</title>
-    <updated>2019-10-15T13:46:06.505Z</updated>
+    <updated>2019-10-19T08:21:55.551Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <author>
         <name>mat2</name>

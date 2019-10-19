@@ -12,6 +12,9 @@ module.exports = {
     ['link', { rel: 'icon', type: 'image/png', href: '/icon/favicon.png' }],
     ['meta', { name: 'google-site-verification', content: 'IlPoCiloaoSPffpYU1OaEpLY1YEnCgkjdM6KfuNCN6g' }],
   ],
+  extendMarkdown: md => {
+    md.use(require('markdown-it-fontawesome'))
+  },
   // theme: 'meteorlxy',
   themeConfig: {
     domain: 'https://mat2.net',
