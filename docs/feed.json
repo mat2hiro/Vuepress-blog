@@ -10,6 +10,17 @@
     },
     "items": [
         {
+            "id": "https://mat2.net/posts/2020/01/09/github-actions-with-pandoc.html",
+            "url": "https://mat2.net/posts/2020/01/09/github-actions-with-pandoc.html",
+            "title": "GitHub actionsでpandocを使ってpdfをコンパイル、そのままpushする",
+            "summary": "markdownでレポートを書き、gitで差分管理しつつpdfへの自動コンパイル",
+            "date_modified": "2020-01-09T00:00:00.000Z",
+            "author": {
+                "name": "mat2",
+                "url": "https://mat2.net/profile/"
+            }
+        },
+        {
             "id": "https://mat2.net/posts/2019/07/30/helloworld.html",
             "url": "https://mat2.net/posts/2019/07/30/helloworld.html",
             "title": "Hello, VuePress!!",
