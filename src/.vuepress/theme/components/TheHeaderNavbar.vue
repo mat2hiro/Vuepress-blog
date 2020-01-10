@@ -161,6 +161,8 @@ $lineHeight = $navbarHeight - ($gutter * 2)
   color $textColor
   background-color alpha($navbarColor, 0.8)
   transition all 0.5s ease-out
+  @media (max-width $MQMobile - 1px)
+    padding: $gutter .5rem $gutter 1rem
   &.fixed
     position fixed
     background-color $navbarColor
@@ -199,7 +201,7 @@ $lineHeight = $navbarHeight - ($gutter * 2)
     border solid 2px transparent
     text-align center
     z-index 100
-    margin-right -2.5px
+    margin-right calc(-2.5px - 1rem)
     margin-left auto
     .icon
       fill $accentColor

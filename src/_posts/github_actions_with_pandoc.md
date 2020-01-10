@@ -11,7 +11,7 @@ header-image: /img/posts/mtpa.jpg
 description: markdownでレポートを書き、gitで差分管理しつつpdfへの自動コンパイル
 ---
 
-# ポイント
+## ポイント
 
 - pandocを用いてmarkdownを（tex経由の）pdfにコンパイルするdocker imageを作る
   - documentclassはltjsbookがいいな
@@ -19,21 +19,21 @@ description: markdownでレポートを書き、gitで差分管理しつつpdf�
   - bibliographyファイルを用意すれば、参考文献も載せられる
 - 上記imageを用いて、自動コンパイル+そのままgit pushするgithub actionsを作る
 
-# 動機
+## 動機
 レポートや論文をmarkdownで書きたい。texで消耗もしないし、テキストファイルで書ければ差分管理も楽ちんなので。
 
 ただし、markdownで書いたままの落書きでは人様に見せられないので、体裁を整えて然るべき拡張子のファイルにする必要がある。
 
-pandocでmd->tex->pdfとコンパイルすることにした。
+pandocでmd->tex->pdfとコンパイルすることにした。  
 で、[これをやってくれるdocker image](https://github.com/Kumassy/docker-alpine-pandoc-ja)がある。（今回はbibliographyを載せたいので、このイメージをちょっといじるけどね）
 
-実際使ってみたが
-md書く->pdfにコンパイル->git push
+実際使ってみたが  
+md書く->pdfにコンパイル->git push  
 ↑この工程のうち、毎回コンパイル挟むのが面倒になってきた。（すぐ面倒臭がる）
 
 なのでpandocによるコンパイルをgit push後に自動でやってもらう事にした。←今回の本題
 
-# pandocを乗っけたdocker image
+## pandocを乗っけたdocker image
 
 基本は以下の記事を読んでください。
 
@@ -86,10 +86,10 @@ $ docker run -it --rm -v `pwd`:/src my-pandoc-ja pandoc -F pandoc-crossref input
 $ docker run -it --rm -v `pwd`:/src my-pandoc-ja pandoc -D latex > mytemplate.tex
 ```
 
-おそらく目次以前のページに関するレイアウトをいじることになると思う。（表紙とか概要とか）
+おそらく目次以前のページに関するレイアウトをいじることになると思う。（表紙とか概要とか）  
 自分は標準テンプレートのmaketitle部分をいじって、表紙にいろんな情報を載せられるようにした。
 
-# github actionsで自動コンパイル
+## github actionsで自動コンパイル
 
 基本は以下リンクを参照。
 
@@ -97,7 +97,7 @@ $ docker run -it --rm -v `pwd`:/src my-pandoc-ja pandoc -D latex > mytemplate.te
 
 pushされたらworkflowを起動させたいので、`on: push` を指定。
 
-## 自前imageつかってコンパイルする
+### 自前imageつかってコンパイルする
 
 各stepの`uses`メンバにDockerfileが置いてあるディレクトリを指定することで、そのDockerfileをもとにしたイメージをビルドする。
 
@@ -114,11 +114,11 @@ pushされたらworkflowを起動させたいので、`on: push` を指定。
 
 こんな感じになる。
 
-## コンパイル結果をgit pushする
+### コンパイル結果をgit pushする
 
 このままではただコンパイルしただけになってしまうので、結果をどこかに上げるなりしないといけない。
 
-今回はそのままgit pushすることにした。
+今回はそのままgit pushすることにした。  
 （gitに無闇にバイナリを乗せるのもどうかと思うので、多分クラウドストレージにアップロードするなりした方がいい。）
 
 <details><summary>gitにログインして変更をpushするコマンド</summary>
@@ -145,7 +145,7 @@ git push origin HEAD
 ```
 </details>
 
-## ２つをまとめる
+### ２つをまとめる
 
 まとめて以下のようなshを作った。
 
@@ -187,18 +187,18 @@ git push origin HEAD
         args: sh ./lib/update.sh
 ```
 
-## 環境変数
+### 環境変数
 
 出力結果などのファイル名を変えるのが面倒なので、`env`メンバに然るべき環境変数を置くことで出力ファイル名などの管理を簡単にする。
 
-# できた
+## できた
 
 [このリポジトリ](https://github.com/mat2hiro/write-report-with-markdown)に完成版があります。
 
-各人のリポジトリで試してみてください。
+各人のリポジトリで試してみてください。  
 pushしたら勝手に後追いでコンパイルしたpdfがpushされるはずです。
 
-# future works
+## future works
 
 コンパイル結果をgitにpushするのではなく、適当なクラウドストレージにアップロードしたい。google driveでいいかな
 

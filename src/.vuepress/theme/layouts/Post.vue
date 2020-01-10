@@ -57,8 +57,17 @@ export default {
 </script>
 
 <style lang="stylus">
-h1
+.post-header-banner h1
   text-align center
+.post-content h2
+  text-align center
+@media only screen and (max-width: $MQMobile - 1px)
+  .post-header-banner h1
+    text-align left
+  .post-content h2
+    text-align left
+  .content
+    padding-left 0
 .banner h1
   text-shadow 1px 0 10px black
 </style>
