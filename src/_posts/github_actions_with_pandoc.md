@@ -17,6 +17,7 @@ description: markdownでレポートを書き、gitで差分管理しつつpdf�
   - documentclassはltjsbookがいいな
   - 自前のテンプレートを使って様々な体裁に対応
   - bibliographyファイルを用意すれば、参考文献も載せられる
+
 - 上記imageを用いて、自動コンパイル+そのままgit pushするgithub actionsを作る
 
 ## 動機
