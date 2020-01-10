@@ -14,3 +14,11 @@ export default {
   name: 'Page',
 }
 </script>
+
+<style lang="stylus">
+.page-content h2
+  text-align center
+@media only screen and (max-width: $MQMobile - 1px)
+  .page-content h2
+    text-align left
+</style>
