@@ -48,7 +48,7 @@ export default {
       return `http://www.facebook.com/share.php?u=${this.site_url}`
     },
     twitterLink() {
-      return `https://twitter.com/share?url=${this.site_url}&text=${this.title_and_description}`;
+      return `https://twitter.com/share?url=${this.site_url}&text=${this.site_title}`;
     },
     hatebLink() {
       return `http://b.hatena.ne.jp/add?mode=confirm&url=${this.site_url}&title=${this.site_title}`;
