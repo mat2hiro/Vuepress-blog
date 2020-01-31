@@ -10,6 +10,18 @@
     },
     "items": [
         {
+            "id": "https://mat2.net/posts/2020/01/31/backlog-slack-notification.html",
+            "url": "https://mat2.net/posts/2020/01/31/backlog-slack-notification.html",
+            "title": "backlogの通知をslackに流すbot",
+            "summary": "backlogに追加した課題をslackに通知する",
+            "image": "https://i.gyazo.com/6413838634c565dfcc67428b1dc2b140.png",
+            "date_modified": "2020-01-31T00:00:00.000Z",
+            "author": {
+                "name": "mat2",
+                "url": "https://mat2.net/profile/"
+            }
+        },
+        {
             "id": "https://mat2.net/posts/2019/07/30/helloworld.html",
             "url": "https://mat2.net/posts/2019/07/30/helloworld.html",
             "title": "Hello, VuePress!!",
