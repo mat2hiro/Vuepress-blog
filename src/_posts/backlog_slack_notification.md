@@ -97,7 +97,7 @@ backlogのwebhookへの登録も手間なので、通知流したいチャンネ
 
 結果（[関数名chat](https://github.com/mat2hiro/backlog-to-slack-notification/blob/f0aece3ceb5b3810dc74b8eecb4eb73273888e26/api.js#L5)）
 
-## slack -> backlog webhook setup (via slash command)
+### slack -> backlog webhook setup (via slash command)
 
 まあよくあるスラッシュコマンドのやつ
 
