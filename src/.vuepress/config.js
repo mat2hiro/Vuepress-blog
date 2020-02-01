@@ -1,6 +1,6 @@
 module.exports = {
   title: 'mat2\'s tech blog',
-  description: 'this is vuepress blog',
+  description: 'vuepressで作られた技術ブログ',
   dest: 'docs/',
   locales: {
     '/': {
@@ -89,7 +89,9 @@ module.exports = {
       hostname: 'https://mat2.net/'
     },
     'seo': {
-      twitterCard: _ => 'summary',
+      title: ($page, $site) => $page.title || $site.title,
+      description: ($page, $site) => $page.frontmatter.description || $site.description,
+      twitterCard: _ => 'summary_large_image',
       image: ($page, $site) => {
         const ret = $page.frontmatter['header-image'] || $site.themeConfig.header.background.url || null;
         if (ret) {
@@ -111,6 +113,11 @@ module.exports = {
     },
     '@vuepress/google-analytics': {
       ga: 'UA-150079399-1',
+    },
+    'vurpress-plugin-container': {
+      type: 'ogp-card',
+      before: url => `<OGPCard url=${url}>`,
+      after: `</OGPCard>`
     }
   }
 }

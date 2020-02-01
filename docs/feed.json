@@ -3,24 +3,12 @@
     "title": "mat2's tech blog",
     "home_page_url": "https://mat2.net/",
     "feed_url": "https://mat2.net/feed.json",
-    "description": "this is vuepress blog",
+    "description": "vuepressで作られた技術ブログ",
     "author": {
         "name": "mat2",
         "url": "https://mat2.net/profile/"
     },
     "items": [
-        {
-            "id": "https://mat2.net/posts/2019/07/30/helloworld.html",
-            "url": "https://mat2.net/posts/2019/07/30/helloworld.html",
-            "title": "Hello, VuePress!!",
-            "summary": "vuepress + github pages による個人ブログ作成",
-            "image": "https://pbs.twimg.com/profile_images/1092782177471741952/OnHQf9H2_400x400.jpg",
-            "date_modified": "2019-07-30T00:00:00.000Z",
-            "author": {
-                "name": "mat2",
-                "url": "https://mat2.net/profile/"
-            }
-        },
         {
             "id": "https://mat2.net/posts/2020/01/09/github-actions-with-pandoc.html",
             "url": "https://mat2.net/posts/2020/01/09/github-actions-with-pandoc.html",
@@ -39,6 +27,18 @@
             "summary": "backlogに追加した課題をslackに通知する",
             "image": "https://i.gyazo.com/426f0e6ed578129c5d154696d11f75c2.png",
             "date_modified": "2020-01-31T00:00:00.000Z",
+            "author": {
+                "name": "mat2",
+                "url": "https://mat2.net/profile/"
+            }
+        },
+        {
+            "id": "https://mat2.net/posts/2019/07/30/helloworld.html",
+            "url": "https://mat2.net/posts/2019/07/30/helloworld.html",
+            "title": "Hello, VuePress!!",
+            "summary": "vuepress + github pages による個人ブログ作成",
+            "image": "https://pbs.twimg.com/profile_images/1092782177471741952/OnHQf9H2_400x400.jpg",
+            "date_modified": "2019-07-30T00:00:00.000Z",
             "author": {
                 "name": "mat2",
                 "url": "https://mat2.net/profile/"
