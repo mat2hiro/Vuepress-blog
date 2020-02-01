@@ -201,7 +201,7 @@ $lineHeight = $navbarHeight - ($gutter * 2)
     border solid 2px transparent
     text-align center
     z-index 100
-    margin-right calc(-2.5px - 1rem)
+    margin-right calc(-0.7px - 1rem)
     margin-left auto
     .icon
       fill $accentColor
