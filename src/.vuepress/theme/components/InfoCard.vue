@@ -135,7 +135,6 @@ export default {
     },
 
     headerStyle () {
-      console.log(this.info)
       if(this.info.header){
         return {
           'background-image': `url(${this.info.header})`,
