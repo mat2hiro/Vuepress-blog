@@ -135,8 +135,17 @@ export default {
     },
 
     headerStyle () {
-      return {
-        'background-image': !this.$ssrContext ? GeoPattern.generate(this.nickname, { color: '#eee' }).toDataUrl() : null,
+      console.log(this.info)
+      if(this.info.header){
+        return {
+          'background-image': `url(${this.info.header})`,
+          'background-size': 'cover',
+          'background-position': 'center',
+        }
+      } else {
+        return {
+          'background-image': (!this.$ssrContext ? GeoPattern.generate(this.nickname, { color: '#eee' }).toDataUrl() : null),
+        }
       }
     },
   },
@@ -151,6 +160,7 @@ $avatarHeight = 120px
 
 .info-card
   padding 0
+  overflow hidden
   a
     color $grayTextColor
     font-weight normal

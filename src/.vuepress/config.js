@@ -30,6 +30,7 @@ module.exports = {
       // location: '',
       organization: 'Tokyo Institute of Technology/Techflyer,inc.',
       avatar: 'https://pbs.twimg.com/profile_images/1092782177471741952/OnHQf9H2_400x400.jpg',
+      header: 'https://pbs.twimg.com/profile_banners/1041141852743729152/1537067919/1500x500',
       sns: {
         github: {
           account: 'mat2hiro',
