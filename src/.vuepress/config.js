@@ -114,10 +114,10 @@ module.exports = {
     '@vuepress/google-analytics': {
       ga: 'UA-150079399-1',
     },
-    'vurpress-plugin-container': {
-      type: 'ogp-card',
-      before: url => `<OGPCard url=${url}>`,
-      after: `</OGPCard>`
-    }
+    // 'container': {
+    //   type: 'ogp-card',
+    //   before: url => `<OGPCard url=${url}>`,
+    //   after: `</OGPCard>`
+    // },
   }
 }
