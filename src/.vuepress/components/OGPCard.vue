@@ -18,6 +18,7 @@ export default {
   name: 'OGPCard',
 
   props: {
+    corsAccepted: Boolean,
     url: String,
     defaults: Object
   },
@@ -73,7 +74,7 @@ export default {
   },
 
   mounted(){
-    this.set_url = this.url;
+    if(this.corsAccepted) this.set_url = this.url;
   },
 
   methods: {
