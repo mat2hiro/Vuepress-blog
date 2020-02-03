@@ -88,6 +88,7 @@ export default {
 .ogp-card
   margin-bottom 1em
   max-width 400px
+  background white
   border 1px solid $borderColor
   border-radius 10px
   overflow hidden
@@ -102,8 +103,10 @@ export default {
       display block
       transition-duration 0.2s
   .ogp-text-container
-    padding 0.8rem 1.5rem 1rem
+    padding 0.6rem 1.5rem 0.8rem
     line-height 1.5
+    border-top 1px solid $borderColor
+    transition-duration 0.2s
     @media only screen and (max-width: $MQMobile - 1px)
       padding 0.3rem 1rem 0.5rem
     .ogp-title
@@ -126,6 +129,7 @@ export default {
     .ogp-image-wrapper span
       transform scale(1.05)
     .ogp-text-container
+      background $borderColor
       .ogp-title, .ogp-description
         color $accentColor
 </style>
