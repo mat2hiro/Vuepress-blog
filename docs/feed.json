@@ -10,6 +10,18 @@
     },
     "items": [
         {
+            "id": "https://mat2.net/posts/2020/01/31/backlog-slack-notification.html",
+            "url": "https://mat2.net/posts/2020/01/31/backlog-slack-notification.html",
+            "title": "backlogの通知をslackに流すbot",
+            "summary": "backlogに追加した課題をslackに通知する",
+            "image": "https://i.gyazo.com/426f0e6ed578129c5d154696d11f75c2.png",
+            "date_modified": "2020-01-31T00:00:00.000Z",
+            "author": {
+                "name": "mat2",
+                "url": "https://mat2.net/profile/"
+            }
+        },
+        {
             "id": "https://mat2.net/posts/2019/07/30/helloworld.html",
             "url": "https://mat2.net/posts/2019/07/30/helloworld.html",
             "title": "Hello, VuePress!!",
@@ -27,18 +39,6 @@
             "title": "GitHub actionsでpandocを使ってpdfをコンパイル、そのままpushする",
             "summary": "markdownでレポートを書き、gitで差分管理しつつpdfへの自動コンパイル",
             "date_modified": "2020-01-09T00:00:00.000Z",
-            "author": {
-                "name": "mat2",
-                "url": "https://mat2.net/profile/"
-            }
-        },
-        {
-            "id": "https://mat2.net/posts/2020/01/31/backlog-slack-notification.html",
-            "url": "https://mat2.net/posts/2020/01/31/backlog-slack-notification.html",
-            "title": "backlogの通知をslackに流すbot",
-            "summary": "backlogに追加した課題をslackに通知する",
-            "image": "https://i.gyazo.com/426f0e6ed578129c5d154696d11f75c2.png",
-            "date_modified": "2020-01-31T00:00:00.000Z",
             "author": {
                 "name": "mat2",
                 "url": "https://mat2.net/profile/"

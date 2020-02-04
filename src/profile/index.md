@@ -18,7 +18,7 @@ title: プロフィール
 
 - Wantedly
 
-  [https://www.wantedly.com/user/profile/edit](https://www.wantedly.com/user/profile/edit)
+  [https://www.wantedly.com/users/30859800](https://www.wantedly.com/users/30859800)
 
 ## 所属
 
