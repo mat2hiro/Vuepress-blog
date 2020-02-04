@@ -73,7 +73,7 @@ module.exports = {
       },
     ],
     comments: false,
-    links: [
+    /*links: [
       {
         name: 'リンク1',
         link: 'https://twitter.com',
@@ -82,7 +82,7 @@ module.exports = {
         name: 'リンク2',
         link: 'https://github.com',
       },
-    ],
+    ],*/
   },
   // plugins
   plugins: {
