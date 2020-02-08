@@ -3,7 +3,7 @@ title: プロフィール
 ---
 
 <div style="text-align:center">
-  <img src="https://pbs.twimg.com/profile_images/1092782177471741952/OnHQf9H2_400x400.jpg" alt="プロフィール画像" style="cursor: zoom-in;width: 50%;">
+  <img src="https://pbs.twimg.com/profile_images/1092782177471741952/OnHQf9H2_400x400.jpg" alt="プロフィール画像" style="cursor: zoom-in;width: 50%;max-width: 300px;">
 </div>
 
 ## 連携

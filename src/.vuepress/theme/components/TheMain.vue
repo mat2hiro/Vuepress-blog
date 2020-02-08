@@ -65,7 +65,7 @@ export default {
       if ('aside' in this.$page.frontmatter) {
         return this.$page.frontmatter.aside
       }
-      return true
+      return this.layout !== 'Page'
     },
 
     containerClass () {
