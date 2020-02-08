@@ -1,6 +1,6 @@
 ---
 title: プライバシーポリシー
-layout: Site
+layout: Page
 ---
 
 本文書は、当サイト（mat2's tech blog）における個人情報の保護およびその適切な取り扱いについての方針を示したものです。
