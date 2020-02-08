@@ -15,11 +15,9 @@ jobs:
     - run: ./lib/git-login.sh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_FROM_BRANCH: "master"
+        GITHUB_BRANCH: "release"
         GITHUB_USERNAME: "mat2hiro"
         GITHUB_USEREMAIL: "ondriver246.1u@gmail.com"
     - run: npm install
     - run: ./lib/npm-deploy.sh
     - run: ./lib/git-push.sh
-      env:
-        GITHUB_RELEASE_BRANACH: "release"
