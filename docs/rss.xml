@@ -4,7 +4,7 @@
         <title>mat2&apos;s tech blog</title>
         <link>https://mat2.net/</link>
         <description>vuepressで作られた技術ブログ</description>
-        <lastBuildDate>Sat, 08 Feb 2020 02:28:47 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 Feb 2020 17:32:04 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://mat2.net/feed.atom" rel="self" type="application/rss+xml"/>
