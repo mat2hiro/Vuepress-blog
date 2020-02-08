@@ -18,6 +18,8 @@
       </a>
     </p>
 
+    <p><a class="footer-link" href="/terms/privacy-policy">Privacy Policy</a></p>
+
     <p>
       <span>Powered by </span>
 
@@ -57,4 +59,8 @@ export default {
   padding-bottom 1.5rem
   text-align center
   border-top 1px solid $borderColor
+  .footer-link
+    color $grayTextColor
+    &:hover
+      color $accentColor
 </style>
