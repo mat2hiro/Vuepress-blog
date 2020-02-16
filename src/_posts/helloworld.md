@@ -22,7 +22,7 @@ vuepress + github pages による個人ブログ作成
   :defaults="{
     title:'VuePress → GitHub Actions → GitHub Pagesで個人ブログ作る | mat2\'s tech blog',
     description: 'VuePressでブログテーマをカスタマイズして、GitHub Pagesで公開するまで（GitHub Actions での自動デプロイ付き）',
-    image: ''
+    image: 'https://mat2.net/img/posts/vbh.jpg'
   }"
 ></OGPCard>
 
