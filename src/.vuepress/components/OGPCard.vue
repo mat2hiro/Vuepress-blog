@@ -115,6 +115,10 @@ export default {
       font-weight 600
       color $textColor
       transition-duration 0.2s
+      display -webkit-box
+      overflow hidden
+      -webkit-line-clamp 2
+      -webkit-box-orient vertical
     .ogp-description
       margin 0.3em 0
       font-size 0.9em

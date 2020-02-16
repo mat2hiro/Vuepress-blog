@@ -13,6 +13,18 @@ vuepress + github pages による個人ブログ作成
 
 <!-- more -->
 
+こちらに公開過程をまとめました
+
+<OGPCard
+  style="margin:0 auto 1em"
+  url="https://mat2.net/posts/2020/02/17/vuepress-blog-hosting.html"
+  :defaults="{
+    title:'VuePress → GitHub Actions → GitHub Pagesで個人ブログ作る | mat2\'s tech blog',
+    description: 'VuePressでブログテーマをカスタマイズして、GitHub Pagesで公開するまで（GitHub Actions での自動デプロイ付き）',
+    image: ''
+  }"
+></OGPCard>
+
 ## テーマ
 
 [vuepress-theme-meteorlxy](https://vuepress-theme-meteorlxy.meteorlxy.cn/)
