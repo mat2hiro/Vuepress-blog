@@ -57,7 +57,7 @@ export default {
       return `http://getpocket.com/edit?url=${this.site_url}&title=${this.site_title}`;
     },
     lineLink() {
-      return `http://line.me/R/msg/text/`
+      return `https://social-plugins.line.me/lineit/share?url=${this.site_url}`
     },
   },
   mounted () {
