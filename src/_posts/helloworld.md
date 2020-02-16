@@ -17,6 +17,7 @@ vuepress + github pages による個人ブログ作成
 
 <OGPCard
   style="margin:0 auto 1em"
+  :corsAccepted="true"
   url="https://mat2.net/posts/2020/02/17/vuepress-blog-hosting.html"
   :defaults="{
     title:'VuePress → GitHub Actions → GitHub Pagesで個人ブログ作る | mat2\'s tech blog',
