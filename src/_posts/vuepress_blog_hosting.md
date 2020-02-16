@@ -5,7 +5,7 @@ tags:
   - vuepress
   - github pages
   - github actions
-date: 2020-02-17
+date: 2020-02-16
 title: VuePress → GitHub Actions → GitHub Pagesで個人ブログ作る
 vssue-title: VuePress → GitHub Actions → GitHub Pagesで個人ブログ作る
 header-image: /img/posts/vbh.jpg
