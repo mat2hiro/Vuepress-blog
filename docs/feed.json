@@ -43,6 +43,17 @@
                 "name": "mat2",
                 "url": "https://mat2.net/profile/"
             }
+        },
+        {
+            "id": "https://mat2.net/posts/2020/02/16/vuepress-blog-hosting.html",
+            "url": "https://mat2.net/posts/2020/02/16/vuepress-blog-hosting.html",
+            "title": "VuePress → GitHub Actions → GitHub Pagesで個人ブログ作る",
+            "summary": "VuePressでブログテーマをカスタマイズして、GitHub Pagesで公開するまで（GitHub Actions での自動デプロイ付き）",
+            "date_modified": "2020-02-16T00:00:00.000Z",
+            "author": {
+                "name": "mat2",
+                "url": "https://mat2.net/profile/"
+            }
         }
     ]
 }
