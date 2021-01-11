@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-    - develop
+    - master
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
       run: ./lib/git-login.sh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_BRANCH: "master"
+        GITHUB_BRANCH: "release"
         GITHUB_USERNAME: "mat2hiro"
         GITHUB_USEREMAIL: "ondriver246.1u@gmail.com"
     - name: yarn build
