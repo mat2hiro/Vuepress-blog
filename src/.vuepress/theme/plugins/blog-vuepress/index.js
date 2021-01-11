@@ -49,6 +49,11 @@ module.exports = (options, ctx) => {
       frontmatter: { layout: 'Page' },
       data: { type: 'page' },
     },
+    {
+      when: ({ regularPath }) => regularPath.startsWith(`/admin/`),
+      frontmatter: { layout: 'Admin' },
+      data: { type: 'admin' },
+    },
   ]
 
   return {

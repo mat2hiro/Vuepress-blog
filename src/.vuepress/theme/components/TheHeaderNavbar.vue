@@ -15,32 +15,10 @@
           </span>
         </RouterLink>
 
-        <div
-          class="navbar-toggler"
-          @click="showNavLinks = !showNavLinks"
-        >
-          <Icon
-            name="menu"
-            size="1.2em"
-          />
-        </div>
+        <template v-if="$page.type !== 'admin'">
 
-        <div
-          class ="navbar-closer-bg"
-          @click="showNavLinks = !showNavLinks"
-          :class="{
-            'show': showNavLinks,
-          }"
-        ></div>
-
-        <div
-          class="navbar-links"
-          :class="{
-            'show': showNavLinks,
-          }"
-        >
           <div
-            class="navbar-closer"
+            class="navbar-toggler"
             @click="showNavLinks = !showNavLinks"
           >
             <Icon
@@ -48,30 +26,55 @@
               size="1.2em"
             />
           </div>
-          <template v-for="nav of $themeConfig.nav">
-            <RouterLink
-              v-if="!isExternal(nav.link)"
-              :key="nav.text"
-              :to="nav.link"
-              class="navbar-link"
-              :exact="nav.exact || false"
-              @click.native="showNavLinks = false"
-            >
-              {{ nav.text }}
-            </RouterLink>
 
-            <a
-              v-else
-              :key="nav.text"
-              :href="nav.link"
-              class="navbar-link"
-              target="_blank"
-              rel="noopener noreferrer"
+          <div
+            class ="navbar-closer-bg"
+            @click="showNavLinks = !showNavLinks"
+            :class="{
+              'show': showNavLinks,
+            }"
+          ></div>
+
+          <div
+            class="navbar-links"
+            :class="{
+              'show': showNavLinks,
+            }"
+          >
+            <div
+              class="navbar-closer"
+              @click="showNavLinks = !showNavLinks"
             >
-              {{ nav.text }}
-            </a>
-          </template>
-        </div>
+              <Icon
+                name="menu"
+                size="1.2em"
+              />
+            </div>
+            <template v-for="nav of $themeConfig.nav">
+              <RouterLink
+                v-if="!isExternal(nav.link)"
+                :key="nav.text"
+                :to="nav.link"
+                class="navbar-link"
+                :exact="nav.exact || false"
+                @click.native="showNavLinks = false"
+              >
+                {{ nav.text }}
+              </RouterLink>
+
+              <a
+                v-else
+                :key="nav.text"
+                :href="nav.link"
+                class="navbar-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ nav.text }}
+              </a>
+            </template>
+          </div>
+        </template>
       </div>
     </nav>
 

@@ -5,7 +5,7 @@
   >
     <TheHeaderNavbar />
 
-    <TransitionFadeSlide v-if="$page.type!=='post'">
+    <TransitionFadeSlide v-if="$page.type==='page'">
       <TheHeaderBanner :key="$route.path">
         <slot>
           <h1 v-if="showTitle">
@@ -49,6 +49,10 @@ export default {
     TransitionFadeSlide,
     TheHeaderNavbar,
     TheHeaderBanner,
+  },
+
+  mounted() {
+    console.log(this.$page)
   },
 
   computed: {

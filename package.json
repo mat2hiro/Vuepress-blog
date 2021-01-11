@@ -22,6 +22,9 @@
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/vue-fontawesome": "^0.1.7",
+    "@octokit/core": "^3.2.4",
+    "@octokit/rest": "^18.0.12",
+    "mavon-editor": "^2.9.1",
     "vuepress-theme-meteorlxy": "^1.7.1"
   }
 }
