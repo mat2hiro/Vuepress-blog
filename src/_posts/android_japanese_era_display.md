@@ -7,7 +7,6 @@ tags:
 date: 2021-02-09
 title: 自分的Android和暦表示プラクティス
 vssue-title: 自分的Android和暦表示プラクティス
-header-image: /img/posts/ajed.jpg
 description: LocalDateTimeからSimpleDateFormatを用いて和暦表示に変換する
 ---
 
