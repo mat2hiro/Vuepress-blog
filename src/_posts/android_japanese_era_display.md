@@ -22,13 +22,13 @@ Androidアプリケーションで和暦表示が必要になったが，標準�
 
 ## 解決策
 
-IBM社製ライブラリのICUでは，[v64.2](http://site.icu-project.org/download/64)から令和に対応している．icu.SimpleDateFormatを用いて和暦をフォーマットすることで「令和」表示を可能にした．まずはapp levelのdependenciesに
-```
+IBM社製ライブラリのICUでは，[v64.2](http://site.icu-project.org/download/64)から令和に対応している．`icu.SimpleDateFormat`を用いて和暦をフォーマットすることで「令和」表示を可能にした．まずはapp levelのdependenciesに
+```groovy
     implementation 'com.ibm.icu:icu4j:64.2'
 ```
 を追加．
 
-また，SimpleDateFormatはjava.util.Dateやjava.util.Calendarを引数にフォーマットするが，LocalDateTimeを使っていたので[Dateへの変換](https://qiita.com/riekure/items/d83d4ea5d8a19a267453#localdatetime--javautildate)も必要になる．
+また，SimpleDateFormatは`java.util.Date`や`Calendar`を引数にフォーマットするが，`LocalDateTime`を使っていたので[Dateへの変換](https://qiita.com/riekure/items/d83d4ea5d8a19a267453#localdatetime--javautildate)も必要になる．
 
 例えば↓こんなクラスを用意してあげればいい．
 ```Kotlin
@@ -51,7 +51,7 @@ class JPDateFormatter(formatStr: String) {
 例えば
 
 ```Kotlin
-val jpFormatter = JPDateFormatter(""GGGGy年M月d日（E）"")
+val jpFormatter = JPDateFormatter("GGGGy年M月d日（E）")
 
 val formatted = jpFormatter.format(LocalDateTime.of(2021, 2, 9))
 ```
