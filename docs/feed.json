@@ -10,6 +10,17 @@
     },
     "items": [
         {
+            "id": "https://mat2.net/posts/2021/02/09/android-japanese-era-display.html",
+            "url": "https://mat2.net/posts/2021/02/09/android-japanese-era-display.html",
+            "title": "自分的Android和暦表示プラクティス",
+            "summary": "LocalDateTimeからSimpleDateFormatを用いて和暦表示に変換する",
+            "date_modified": "2021-02-09T00:00:00.000Z",
+            "author": {
+                "name": "mat2",
+                "url": "https://mat2.net/profile/"
+            }
+        },
+        {
             "id": "https://mat2.net/posts/2020/01/31/backlog-slack-notification.html",
             "url": "https://mat2.net/posts/2020/01/31/backlog-slack-notification.html",
             "title": "backlogの通知をslackに流すbot",
