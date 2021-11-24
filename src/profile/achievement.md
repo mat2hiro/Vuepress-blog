@@ -8,7 +8,7 @@ aside: false
 
 ### 雑誌論文
 
-H. Matsume, Y. Wang, and H. Ishii, Resilient self/event-triggered consensus based on ternary control, [Nonlinear Analysis: Hybrid Systems, 42: 101091, 2021.](https://www.sciencedirect.com/science/article/abs/pii/S1751570X21000819)
+- H. Matsume, Y. Wang, and H. Ishii, Resilient self/event-triggered consensus based on ternary control, [Nonlinear Analysis: Hybrid Systems, 42: 101091, 2021.](https://www.sciencedirect.com/science/article/abs/pii/S1751570X21000819)
 
 ### 査読付き国際会議論文
 
