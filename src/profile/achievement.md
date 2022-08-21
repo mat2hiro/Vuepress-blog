@@ -23,3 +23,7 @@ aside: false
 - [monopoly dice app (WIP)](https://mnpl-app.mat2.net/)
   
   モノポリーをオンラインで遊ぶための盤面共有ツール
+
+- [Conway's Game of Life](https://lifegame.mat2.net/)
+  
+  ライフゲームが遊べる Nuxt3習作
